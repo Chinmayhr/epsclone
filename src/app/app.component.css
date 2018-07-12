@@ -1,0 +1,714 @@
+.navbar{
+	    min-height: 30px !important;
+    background: none;
+    background-color: #ff9800 !important ;
+    line-height: 30px;
+    margin-bottom: 0px;
+        border: none;
+        color: #fff;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: #000 !important;
+}
+
+.navMain li span{
+	border-left: 1px solid #fff;
+	padding: 0px 15px 0px 15px;
+	cursor: pointer;
+}
+
+.navMain li:first-child span{
+	border-left: 0px;
+}
+
+/*.navbar li:hover{
+	background-color: #0889c3
+}
+
+.navbar li span:hover{
+	border:0px;
+}*/
+
+.navLeftSection i{
+	    margin-left: 12px;
+    font-size: 12px;
+}
+
+#overlay{
+	position: absolute;
+     display: none; 
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.navbarRoute li{
+	border:0px;
+}
+
+main{
+	position: relative;
+}
+
+.subHeader{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 30px 0px 30px;
+    border-bottom: 1px solid #f3f1de;
+}
+
+.subHeader p{
+	margin: 15px !important;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.subHeaderSearchBar{
+	    border: 1px solid #d8d7c2;
+    border-radius: 10px;
+}
+
+.subHeaderSearchBar input{
+	border: 0px;
+	margin: 8px;
+	outline: none;
+	width: 100px;
+}
+
+.subHeaderSearchBar i{
+	color: #0889c3;
+	font-size: 15px;
+	margin-right: 10px
+}
+
+
+
+.homeDropdown{
+	display: flex;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    background: #fff;
+    z-index: 4;
+    line-height: 2
+}
+
+.homeVerticalDropdown{
+	    width: 150px;
+    border-right: 1px solid #dce1e6;
+    padding: 10px;
+}
+
+.homeHorizontalDropdown{
+	margin-left: 20px;
+    padding: 10px;
+    background: url(/assets/books.png);
+    width: 60%;
+    background-size: cover;
+
+}
+
+
+.homeSlider img{
+	width: 100%;
+}
+
+.homeSlider{
+	position: relative;
+}
+
+.homeSlider div{
+	position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    top: calc(50% - 25px);
+    right: 25px;
+    opacity: 0.2;
+    display: flex;
+    font-size: 40px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+.homeDetails{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.homeDetailsComponent{
+	height: 250px;
+    width: 200px;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0px 10px 0px 10px;
+    border-left: 1px solid #eaeade;
+    margin: 20px 0px 20px 0px;
+}
+
+.homeDetailsComponent p{
+	font-weight: bold;
+	color: #3f51b5;
+	min-height: 45px;
+}
+
+.homeDetailsComponent ul{
+	text-align: left;
+}
+
+.homeDetailsComponent:first-child{
+	border: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.homeProductList {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.homeProductList p {
+	color: #adada7;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.homeProductDisplayList{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+.homeProduct{
+	margin: 25px;
+	position: relative;
+	    background: #f1ecc4;
+    width: 300px;
+        padding-top: 10px;
+}
+
+.homeProduct span{
+	/*position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+*/
+	font-size: 25px;
+}
+
+.homeProduct p{
+	position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+        color: #ff9800;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.homeProductViewMore p{
+	right: inherit;
+	bottom: 50px;
+	cursor: pointer;
+}
+
+
+.homeProductViewMore{
+	display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    padding: 0px;
+    background: #fff;
+    height: 300px
+}
+
+
+
+.homeProduct img{
+	width: 250px;
+}
+
+
+
+.homeIndustriesServed{
+	margin-top: 100px;
+    text-align: center;
+}
+
+.homeIndustriesServed img{
+	width: 40%;
+}
+
+figcaption{
+	max-width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+
+.homeCustomers{
+	text-align: center;
+	margin-top: 80px;
+}
+
+.homeSubscribe{
+	margin-top: 50px;
+	display: flex;
+    height: 50px;
+    background: #2393ec;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.homeSubscribeLeft{
+	    flex: 2;
+    font-size: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.homeSubscribeRight{
+	flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.homeSubscribeRight input{
+	    border: 0px;
+    border-bottom: 1px solid #fff;
+    width: 240px;
+    height: 40px;
+    background: transparent;
+}
+
+.homeSubscribeRight input::placeholder{
+	color: #fff
+}
+
+.homeSubscribeRight div{
+	    border: 1px solid white;
+    border-radius: 10px;
+    margin-left: 50px;
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+
+.homeCustomerList{
+	width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+
+.homeCustomerBlock{
+	/*flex: 1;*/
+	    width: 80%;
+    margin-left: 10%;
+}
+
+.homeCustomerBlock img{
+	    width: 150px;
+    border: 1px solid #eaeade;
+    border-radius: 21px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.homeCustomerPaginator{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #ff9800;
+}
+
+.homeCustomerPaginator i{
+	cursor: pointer;
+}
+
+
+
+.homeShipingPolicy{
+	background-color: #FF9800;
+	display: flex;
+	padding: 50px;
+	margin-top: 50px;
+}
+
+.homeShipingPolicy img{
+	width: 80%;
+}
+
+.homeShipingPolicyLeftSection{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.homeShipingPolicyRightSection{
+	padding: 40px;
+	flex: 1;
+}
+
+.homeShipingPolicyRightSection p:first-child{
+	font-size: 50px;
+    color: #fff;
+}
+
+.homePolicyStatment{
+	font-size: 18px;
+	line-height: 1.5
+}
+
+.homePolicyCheckoutButton{
+	    width: 300px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 5px 0px 5px 0px;
+}
+
+.homeShipingPolicyRightSection div{
+	border: 1px solid #fff;
+    max-width: 300px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+        background: #fff;
+}
+
+
+
+
+.homeBenifitsMask{
+	    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+
+
+.homeBenifitsMask{
+	width: 80%;
+    text-align: center;
+    border-bottom: 1px solid #e0d8d8;
+    line-height: 0.1;
+    margin-left: 10%; 
+}
+
+.homeBenifitsHeading, .homeBenifitsHeading1 { 
+	background:#fff; 
+	padding:0 10px; 
+	 text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+
+.homeBenifitsContent{
+	width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.homeBenifitsList{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+
+
+.homeBenifitsHeading1{
+	display: none;
+}
+
+.homeBenifitsList div img{
+	max-width: 200px;
+}
+
+.homeBenifitsDetails{
+	border-left: 1px solid #eaeade;
+	margin-top: 35px;
+}
+
+.homeBenifitsComponent{
+	width: 250px;
+    text-align: center;
+    line-height: 1.5;
+    height: 450px;
+    padding: 0px 10px 0px 10px;
+    margin: 20px 0px 20px 0px;
+}
+
+.homeBenifitsComponent p{
+	font-weight: bold;
+	color: #3f51b5;
+}
+
+.homeBenifitsComponent ul{
+	text-align: left;
+}
+
+.homeBenifitsFirst{
+	border: 0px;
+}
+
+
+.homeAccountRegistration{
+	display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    background-color: #efefde;
+        padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.homeAccountRegistration p:first-child{
+	font-size: 20px;
+}
+
+.homeAccountRegistrationStatement{
+	font-size: 30px;
+}
+
+.homeAccountRegistrationButton{
+	padding: 0px 15px;
+    width: 200px;
+    border-radius: 15px;
+    background: #0775cc;
+    border: 0px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+
+.homeFooter div{
+	display: flex;
+	font-size: 12px;
+}
+
+.homeFooter p{
+	margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.homeFooterLeft{
+	float: left;
+}
+
+.homeFooterRight{
+	float: right;
+	    font-size: 25px !important;
+}
+
+.homeFooterRight p{
+	margin-left: 30px;
+}
+
+.homeFooterLeft p{
+	margin-right: 20px
+}
+
+.homeFooter{
+	width: 100%;
+	float: left;
+	background-color: #399dec;
+	height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.homeFooter p {
+	margin-bottom: 0px
+}
+
+.footer1{
+	    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.homeFooter1Right{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer1Wrap{
+	background-color: #399dec;
+	display: none;
+	color: #fff;
+}
+
+.footerCopyright{
+	text-align: center;
+	margin: 0px;
+}
+
+.footer1Wrap p{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .navMain li span{
+		border-left: 0px;
+	}
+
+	.homeShipingPolicy{
+		flex-direction: column
+	}
+
+	.homeBenifitsMask{
+		display: none;
+	}
+
+	.homeBenifitsHeading1{
+		display: block;
+	}
+
+	.homeDetails{
+		flex-wrap: wrap;
+	}
+
+	.homeSubscribe{
+		flex-direction: column;
+		    height: 150px;
+	}
+
+	.homeFooter{
+		display: none;
+	}
+
+	.footer1Wrap{
+		display: block;
+		margin-top: 25px;
+	}
+
+	.homeSlider img{
+	height: 320px;
+}
+
+
+
+	
+}
+
+
+@media only screen and (max-width: 480px) {
+    .homeShipingPolicyRightSection{
+		padding: 15px;
+	}
+
+	.homeShipingPolicy{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	
+	.homeAccountRegistration{
+		padding-left: 20px
+	}
+
+	.homeSubscribe{
+		height: 200px;
+	}
+
+	.homeSubscribeRight{
+		flex-direction: column;
+	}
+
+	.homeSubscribeRight div{
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .subHeader{
+    	display: none;
+    }
+
+    .homeFooter{
+		display: none;
+	}
+
+	.footer1Wrap{
+		display: block;
+	}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    .footer1{
+    	flex-direction: column;
+    }
+
+    .homeFooterLeft{
+    	text-align: center;
+    }
+
+    .homeFooterRight{
+    	margin-right: 30px;
+    }
+}

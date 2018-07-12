@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { AskFormComponent } from './components/ask-form/ask-form.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AskFormComponent
   ],
   imports: [
     BrowserModule

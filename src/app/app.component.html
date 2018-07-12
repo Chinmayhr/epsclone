@@ -1,20 +1,316 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <nav class="navbar" (click) = "removeOverlay()">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
 
+      <div class="collapse navbar-collapse navMain" id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav navLeftSection">
+          <li style="background-color: #0889c3"><span>Download Catalogue <i class="fas fa-angle-right"></i></span></li>
+          <li><span style="border: 0px ">Customer Support</span></li>
+          <li><span>Track Order</span></li>
+        </ul>
+        <ul class="navbarRoute nav navbar-nav navbar-right">
+          <li><span>Register</span></li>
+          <li><span >Login</span></li>
+          <li><span style="border:0px"><i class="fas fa-shopping-cart"></i></span></li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div >
+    <div class="subHeader">
+      <img src="assets/epsLogo.png">
+      <p>HOME</p>
+      <p (click)="showDropdown()">PRODUCTS</p>
+      <p>THE EXCEL FACTOR</p>
+      <p>COMPANY</p>
+      <p>CONTACT</p>
+      <div class="subHeaderSearchBar">
+        <input type="text" name="searchText" placeholder="Search"><i class="fas fa-search"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <main class="homeContent">
+    <div class="homeSlider">
+      <img src="assets/banner.jpg">
+      <div><i class="fas fa-angle-right"></i></div>
+    </div>
+
+    <div class="homeDetails">
+      <div class="homeDetailsComponent">
+        <p>EXCLUSIVE IMPORTER OF RENOWNED BRANDS</p>
+        <ul>
+          <li>Buy high quaulity and affortabe PT, OT and Sports Medicine products.</li>
+          <li>Hassle free prdering process.</li>
+        </ul>
+      </div>
+      <div class="homeDetailsComponent">
+        <p>BUSINESS PRICING & BULK DISCOUNTS</p>
+        <ul>
+          <li>Business-only pricing for healthcare professionals,clinics and dealers.</li>
+          <li>Quality Discounts.</li>
+          <li>Get GST invoice and claim input tax credit on your business purchase.</li>
+        </ul>
+      </div>
+      <div class="homeDetailsComponent">
+        <p>FAST, EASY SHIPPING</p>
+        <ul>
+          <li>To ensure timely delivery, we have our own courier team and FedEx as our delivery partner.</li>
+        </ul>
+      </div>
+      <div class="homeDetailsComponent">
+        <p>PAY THE WAY YOU WANT</p>
+        <ul>
+          <li>Credit Card/ Debit Card/ PayTm</li>
+          <li>Net Banking</li>
+          <li>COD available for most pin codes.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="homeProductList">
+      <h1>Exclusive Products</h1>
+      <p>Flexible wholesale deals that fits every budget</p>
+      <div class="homeProductDisplayList">
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct">
+          <div><span>Exercise Mat</span></div>
+          <img src="assets/gymMat.png">
+          <p>BUY NOW <i class="fas fa-angle-right"></i></p>
+        </div>
+        <div class="homeProduct homeProductViewMore">
+          <i class="fas fa-plus"></i>
+          <p>View More</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="homeIndustriesServed">
+      <img src="assets/donought.png">
+      <figcaption>Our integrated networks and exclusive partnerships give us an edge in supplying medical equipments to a range of institution sizes from multi-speciality hospitals to stand alone clinics and gyms.</figcaption>
+    </div>
+
+          <div class="homeSubscribe">
+    <div class="homeSubscribeLeft">
+      Join Our Mailing List
+    </div>
+    <div class="homeSubscribeRight">
+      <input type="email" name="email" placeholder="EMAIL ID">
+      <div style="display: flex;">SUBSCRIBE <i style="font-size: 20px;color: #FF9800;margin-left: 15px;" class="fas fa-caret-right"></i></div>
+    </div>
+  </div>
+
+    <div class="homeCustomers">
+      <h1>Our Valued Customers</h1>
+      <div class="homeCustomerList">
+        <div class="homeCustomerBlock">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+          <img src="assets/customer.png">
+        </div>
+        <div class="homeCustomerPaginator">
+            <i class="fas fa-angle-up"></i>
+            <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="homeShipingPolicy">
+      <div class="homeShipingPolicyLeftSection">
+        <img src="assets/cargo.png">
+      </div>
+      <div class="homeShipingPolicyRightSection">
+        <p>We Deliver Value, Nationally</p>
+        <p class="homePolicyStatment">From Delhi to Mumbai and from Kolkata to Chennai. Wherever you are in India.. We will get there promptly.</p>
+        <div style="display: flex;align-items: center;">Check out our free shipping policy <i style="font-size: 20px;color: #FF9800;margin-left: 20px;" class="fas fa-caret-right"></i></div>
+      </div>
+    </div>
+
+    <div style="margin:5%;">
+      <app-ask-form></app-ask-form>
+    </div>
+
+    <div class="homeBenifits">
+      <div class="homeBenifitsMask"><span class="homeBenifitsHeading">Excel with us</span></div>
+      <span class="homeBenifitsHeading1">Excel with us</span>
+      <div class="homeBenifitsList">
+        <div class="homeBenifitsContent">
+          <div class="homeBenifitsComponent">
+            <img src="assets/donought.png">
+            <div class="homeBenifitsDetails homeBenifitsFirst">
+              <p>EXCLUSIVE IMPORTER OF RENOWNED BRANDS</p>
+              <ul >
+                <li>Buy high quaulity and affortabe PT, OT and Sports Medicine products.</li>
+                <li>Hassle free prdering process.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="homeBenifitsComponent">
+            <img src="assets/donought.png">
+            <div class="homeBenifitsDetails">
+              <p>EXCLUSIVE IMPORTER OF RENOWNED BRANDS</p>
+              <ul >
+                <li>Buy high quaulity and affortabe PT, OT and Sports Medicine products.</li>
+                <li>Hassle free prdering process.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="homeBenifitsComponent">
+            <img src="assets/donought.png">
+            <div class="homeBenifitsDetails">
+              <p>EXCLUSIVE IMPORTER OF RENOWNED BRANDS</p>
+              <ul >
+                <li>Buy high quaulity and affortabe PT, OT and Sports Medicine products.</li>
+                <li>Hassle free prdering process.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="homeAccountRegistration">
+      <p>Special Business Pricing for</p>
+      <p class="homeAccountRegistrationStatement">Health Care Professionals</p>
+      <div class="homeAccountRegistrationButton">CREATE NEW ACCOUNT <i style="font-size: 20px;color: #fff;margin-left: 10px;display:flex;justify-content: center;align-items: center;" class="fas fa-caret-right"></i></div>
+    </div>
+
+    <div [ngStyle]="{'display':dropdownDisplay , 'width':dropdownWidth}" class="homeDropdown">
+      <div class="homeVerticalDropdown">
+      <p (click)="showHorizontalDropdown()">Physio Tapes <i style="margin-left: 30px;font-size: 15px;" class="fas fa-angle-right"></i></p>
+      <p>Excercise Bands</p>
+      <p>Hand Excercise</p>
+      <p>Hot and Cold Packs</p>
+      <p>Gym Balls</p>
+      <p>Balance Cushion</p>
+      <p>Orthopedics</p>
+      <p>Excercise Mats</p>
+      <p>Foam Rollers</p>
+      <p>Message Therapy</p>
+    </div>
+    <div [ngStyle]="{'display':hDropdownDisplay}" class="homeHorizontalDropdown">
+      <p>Kinesociology</p>
+      <p>Pre-wrap</p>
+      <p>Athletic Tape</p>
+      <p>Foam Under Wrap</p>
+      <p>Cohesive Stretch Tape</p>
+    </div>
+    </div>
+    
+
+    <div [ngStyle]= "{'display':overlayDisplay}" id="overlay" (click) = "removeOverlay()"></div>
+
+  </main>
+
+  
+
+  <div class="homeFooter">
+    <div class="homeFooterLeft">
+      <p><i class="far fa-copyright"></i>Copyright 2017 ExcelPhysicianSupplies</p>
+      <p>Blogs</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+      <p>Terms of use</p>
+      <p>FAQs</p>
+    </div>
+    <div class="homeFooterRight">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-linkedin"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+    </div>
+    <div></div>
+  </div>
+
+
+
+
+
+
+<div class="footer1Wrap">
+  <div class="footer1">
+   <div class="homeFooterLeft homeFooter1Left">
+      <!-- <p>Copyright 2017 ExcelPhysicianSupplies</p> -->
+      <p>Blogs</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+      <p>Terms of use</p>
+      <p>FAQs</p>
+    </div>
+    <div class="homeFooterRight homeFooter1Right">
+      <p><i class="fab fa-facebook-f"></i></p>
+      <p><i class="fab fa-linkedin"></i></p>
+      <p><i class="fab fa-twitter"></i></p>
+    </div>
+
+ </div>
+ <p class="footerCopyright"><i class="far fa-copyright"></i>Copyright 2017 ExcelPhysicianSupplies</p>
+</div>
+ 
